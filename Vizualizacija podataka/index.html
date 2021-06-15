@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bitcoin vs Ethereum</title>
+        <link rel='stylesheet' href='styles/styles.css'/>    
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Bitcoin or Ethereum?</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav> 
+        </header> 
+        <main> 
+            <div class="content">
+                <p>
+                    Price of each cryptocurrency can be seen on the charts below. Gold represents Bitcoin, while Blue represents Ethereum.
+                </p>
+                <div id="price-charts">
+                    <div id="btc-chart-price-usd">
+                    </div>
+                    <div>
+                        <div id="eth-chart-price-usd">
+                        </div>
+                        <div class="option-input">
+                            <div>
+                                <input type="checkbox" id="eth-input-usd-option" name="eth-usd" onclick="showEthInUsd()" checked="true" autocomplete="off">
+                                <label class="eth-input-option" for="eth-usd">Eth in USD</label>
+                            </div>
+                            <div>      
+                                <input type="checkbox" id="eth-input-btc-option" name="eth-btc" onclick="showEthInBtc()" autocomplete="off">
+                                <label class="eth-input-option" for="eth-btc">Eth in BTC</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Chart below displays market cap of both of the cryptocurrencies.
+                </p>
+                <div id="btc-eth-market-cap-chart">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="scripts/btc_price_usd.js"></script>
+        <script src="scripts/eth_price.js"></script>
+        <script src="scripts/btc_eth_market_cap_1yr.js"></script>
+    </body>
+</html>

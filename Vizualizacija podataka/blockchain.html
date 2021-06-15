@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bitcoin vs Ethereum</title>
+        <link rel='stylesheet' href='styles/styles.css'/>    
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Bitcoin or Ethereum?</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav> 
+        </header> 
+        <main> 
+            <div class="content">
+                <p>
+                On the charts below we can see average block size.
+                </p>
+                <div id="block-size-charts">
+                    <div id="btc-avg-block-size-chart">
+                    </div>
+                    <div id="eth-avg-block-size-chart">
+                    </div>
+                </div>
+                <p>
+                    These charts display total size of the blockchain through the time.
+                </p>
+                <div id="blockchain-size-charts">
+                    <div id="btc-blockchain-size-chart">
+                    </div>
+                    <div id="eth-blockchain-size-chart">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="scripts/btc_avg_block_size.js"></script>
+        <script src="scripts/eth_avg_block_size.js"></script>
+        <script src="scripts/btc_blockchain.js"></script>
+        <script src="scripts/eth_blockchain.js"></script>
+    </body>
+</html>

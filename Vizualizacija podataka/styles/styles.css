@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+  }
+
+  html,body{
+      height: 100%;
+      background-color: #12151E;
+  }
+
+  header{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #141924;
+  }
+
+  h1{
+      color: #F2A900;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      font-size: 3em;
+      font-weight: 300;
+  }
+
+  header nav{
+      margin: 0 auto;
+      width: 1500px;
+      height: 50px;
+      margin-top: 20px;
+  }
+
+  header nav ul{  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+ header nav ul li{
+      height: 100%;
+      width: 25%;
+      list-style-type: none;
+      background-color: #141924;
+      opacity: 1;
+      text-align: center;
+      font-size: 24px;
+  }
+
+  header nav li a, footer nav li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #F2A900;
+    padding-top: 10px;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+  }
+
+  header nav li a:active{
+    background-color: red;
+    color: red;
+  }
+
+  header nav li a:hover{
+    color: #FFFFFF !important;
+    background-color: #4d4d4d;
+  }
+  
+  header nav li a:visited{
+    color: #A6A6A6;
+  }
+
+  .content{
+      height: 100%;
+      width: 1500px;
+      margin: 0 auto;
+  }
+
+  p{
+    padding-top: 60px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 1150px;
+    font-size: 1.5em;
+    color: #ACADB0;
+    text-align: center;
+  }
+
+  #price-charts{
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  #btc-eth-price-chart{
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+  }
+
+  .option-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .eth-input-option{
+    color: #ACADB0;
+    margin-right: 30px;
+  }
+
+
+  #btc-eth-market-cap-chart{
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+  }
+
+  .axisGray line{
+    stroke: #A6A6A6;
+  }
+  
+  .axisGray path{
+    stroke: #A6A6A6;
+  }
+  
+  .axisGray text{
+    fill: #A6A6A6;
+  }
+
+  footer{
+    margin: 0 auto;
+    height: 50px;
+    width: 100%;
+    background-color: #141924;
+  }
+
+  footer nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+  }
+
+  footer nav ul li{
+    padding-top: 5px;
+    margin-right: 25px;
+  }
+
+  footer nav ul li a:hover{
+    color: white;
+  }
+
+  /**
+  *
+  *
+  *BLOCKCHAIN
+  *
+  *
+  */
+  #block-size-charts{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #blockchain-size-charts{
+    display: flex;
+    justify-content: space-around;
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+
+ /**
+  *
+  *
+  *TRANSACTIONS
+  *
+  */
+
+  #transactions-per-second-chart{
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .tx-option{
+    color: #ACADB0;
+    margin-right: 30px;
+  }
+
+  #avg-transaction-fee-chart{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #avg-transaction-fee-chart svg{
+    margin-bottom: 20px;
+  }
+
+
+  /**
+  *
+  *
+  *HASHRATE
+  *
+  */
+
+  #hashrate-distribution-charts{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #hashrate-charts{
+    margin: 60px auto;
+    margin-bottom: 60px;
+    display: flex; 
+    justify-content: space-around;
+  }
+
+  #btc-hashrate-distribution-chart{
+    margin: 60px auto 0 auto;
+    text-align: center;
+  }
+
+  #eth-hashrate-distribution-chart{
+    margin: 60px auto 0 auto;
+    text-align: center;
+  }

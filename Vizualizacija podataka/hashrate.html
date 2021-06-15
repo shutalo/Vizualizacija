@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bitcoin vs Ethereum</title>
+        <link rel='stylesheet' href='styles/styles.css'/>    
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <!-- fixes favico error -->
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <header>
+            <h1>Bitcoin or Ethereum?</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav> 
+        </header> 
+        <main> 
+            <div class="content">
+                <p>
+                    On the charts bellow we can see how the network hashrate is distributed in the world.
+                </p>
+                <div id="hashrate-distribution-charts">
+                    <div id="btc-hashrate-distribution-chart">
+                    </div>
+                    <div id="eth-hashrate-distribution-chart">
+                    </div>
+                </div>
+                <p>
+                    On the following charts we can see mean hashrate.
+                </p>
+                <div id="hashrate-charts">
+                    <div id="btc-hashrate-chart">
+                    </div>
+                    <div id="eth-hashrate-chart">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="scripts/btc_hashrate.js"></script>
+        <script src="scripts/eth_hashrate.js"></script>
+        <script src="scripts/btc_hashrate_distribution.js"></script>
+        <script src="scripts/eth_hashrate_distribution.js"></script>
+    </body>
+</html>

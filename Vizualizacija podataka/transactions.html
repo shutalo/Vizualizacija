@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bitcoin vs Ethereum</title>
+        <link rel='stylesheet' href='styles/styles.css'/>    
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Bitcoin or Ethereum?</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav> 
+        </header> 
+        <main> 
+            <div class="content">
+                <p>
+                    Next chart represents average number of transactions executed per second in both of the networks.
+                </p>
+                <div id="transactions-per-second-chart">
+                    <div id="tx-count-chart">
+                    </div>
+                    <div class="option-input">
+                        <div>
+                            <input type="checkbox" id="btc-tx-option" name="btc-tx-option" onclick="showBtcTxCount()" checked="true" autocomplete="off">
+                            <label class="tx-option" for="btc-tx-option">BTC tx count</label>
+                        </div>
+                        <div>      
+                            <input type="checkbox" id="eth-tx-option" name="eth-tx-option" onclick="showEthTxCount()" autocomplete="off">
+                            <label class="tx-option" for="eth-tx-option">Eth tx count</label>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    On the chart below is displayed average fee per transaction in both of the networks.
+                </p>
+                <div id="avg-transaction-fee-chart">
+                    <div id="avg-tx-fee-chart">
+                    </div>
+                    <div class="option-input">
+                        <div>
+                            <input type="checkbox" id="btc-fee-option" name="btc-tx-option" onclick="showBtcFee()" checked="true" autocomplete="off">
+                            <label class="tx-option" for="btc-tx-option">BTC fee</label>
+                        </div>
+                        <div>      
+                            <input type="checkbox" id="eth-fee-option" name="eth-tx-option" onclick="showEthFee()" autocomplete="off">
+                            <label class="tx-option" for="eth-tx-option">Eth fee</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Market Cap</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="transactions.html">Transactions</a></li>
+                    <li><a href="hashrate.html">Hashrate</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="scripts/transactions_count.js"></script>
+        <script src="scripts/average_transaction_fee.js"></script>
+    </body>
+</html>
